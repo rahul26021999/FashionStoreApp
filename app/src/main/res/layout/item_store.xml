@@ -3,7 +3,10 @@
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:padding="10dp"
-    android:layout_height="wrap_content">
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:layout_height="wrap_content"
+    android:focusable="true">
 
     <ImageView
         android:layout_width="100dp"
@@ -47,7 +50,7 @@
         android:maxLines="1"
         tools:text="Rs. 500"
         android:layout_marginStart="20dp"
-        android:textSize="13sp"
+        android:textSize="14sp"
         android:maxLength="50"
         android:textStyle="bold"
         android:layout_marginTop="5dp"

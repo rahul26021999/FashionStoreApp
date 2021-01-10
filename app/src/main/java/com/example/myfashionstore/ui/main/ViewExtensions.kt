@@ -2,6 +2,7 @@ package com.example.myfashionstore.ui.main
 
 import android.content.Context
 import android.widget.ImageView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -36,6 +37,9 @@ fun ImageView.loadImg(
     }
 }
 fun RecyclerView.setMultiRv(context: Context, adapter: MultiTypeAdapter) {
+    val dividerItemDecoration =
+        DividerItemDecorator(ContextCompat.getDrawable(context, R.drawable.divider)!!)
     layoutManager = LinearLayoutManager(context)
     this.adapter = adapter
+    addItemDecoration(dividerItemDecoration)
 }
