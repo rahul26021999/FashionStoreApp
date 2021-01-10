@@ -21,8 +21,7 @@ import kotlin.collections.ArrayList
 class MenStoreFragment : Fragment() {
 
     private val multiAdapter = MultiTypeAdapter()
-
-    private val items=ArrayList<StoreItem>();
+    private val items=ArrayList<StoreItem>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
